@@ -1,0 +1,44 @@
+/*
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+
+
+:root {
+    --ifm-color-primary: #9370DB; /* Medium Purple */
+    --ifm-color-primary-dark: #7B68EE; /* Medium Slate Blue */
+    --ifm-color-primary-darker: #6A5ACD; /* Slate Blue */
+    --ifm-color-primary-darkest: #483D8B; /* Dark Slate Blue */
+    --ifm-color-primary-light: #BA55D3; /* Medium Orchid */
+    --ifm-color-primary-lighter: #DA70D6; /* Orchid */
+    --ifm-color-primary-lightest: #D8BFD8; /* Thistle */
+    --ifm-code-font-size: 95%;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* For readability concerns, you should choose a lighter palette in dark mode. */
+  [data-theme='dark'] {
+    --ifm-color-primary: #9370DB; /* Medium Purple */
+    --ifm-color-primary-dark: #7B68EE; /* Medium Slate Blue */
+    --ifm-color-primary-darker: #6A5ACD; /* Slate Blue */
+    --ifm-color-primary-darkest: #483D8B; /* Dark Slate Blue */
+    --ifm-color-primary-light: #BA55D3; /* Medium Orchid */
+    --ifm-color-primary-lighter: #DA70D6; /* Orchid */
+    --ifm-color-primary-lightest: #D8BFD8; /* Thistle */
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  }
+  
+.katex {
+    line-height: 2;
+}
+
+.geogebra-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
