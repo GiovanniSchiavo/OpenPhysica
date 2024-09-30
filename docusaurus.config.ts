@@ -88,6 +88,24 @@ const config: Config = {
             sidebarId: 'Fisica1', // foldername
             label: 'Fisica 1',     // navbar title
           },
+          {
+            type: 'docSidebar',  // docSidebar
+            position: 'left',
+            sidebarId: 'Fisica2', // foldername
+            label: 'Fisica 2',     // navbar title
+          },
+          {
+            type: 'docSidebar',  // docSidebar
+            position: 'left',
+            sidebarId: 'Fismat', // foldername
+            label: 'Fisica Matematica',     // navbar title
+          },
+          {
+            type: 'docSidebar',  // docSidebar
+            position: 'left',
+            sidebarId: 'FisicaTeorica', // foldername
+            label: 'Fisica Teorica',     // navbar title
+          },
         ],
       },
     footer: {
