@@ -106,6 +106,13 @@ const config: Config = {
             sidebarId: 'FisicaTeorica', // foldername
             label: 'Fisica Teorica',     // navbar title
           },
+          {
+            type: 'docSidebar',  // docSidebar
+            position: 'left',
+            sidebarId: 'Lab3', // foldername
+            label: 'Laboratorio di Fisica',     // navbar title
+          },
+
         ],
       },
     footer: {
