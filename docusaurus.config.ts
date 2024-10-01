@@ -112,7 +112,12 @@ const config: Config = {
             sidebarId: 'Lab3', // foldername
             label: 'Laboratorio di Fisica',     // navbar title
           },
-
+          {
+            type: 'docSidebar',  // docSidebar
+            position: 'left',
+            sidebarId: 'Analisi3', // foldername
+            label: 'Analisi 3',     // navbar title
+          },
         ],
       },
     footer: {

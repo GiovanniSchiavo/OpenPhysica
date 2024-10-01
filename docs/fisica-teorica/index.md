@@ -17,3 +17,9 @@ I principali argomenti trattati dal corso, divisi in ore, sono:
 - Introduzione elettromagnetismo (53-56)
 - Urti elastici (57-60)
 - Entanglement (61-64)
+
+## Principali differenze fra la meccanica quantistica e la meccanica classica
+Alcune differenze riguardano:
+- la linearità
+- la necessità di numeri complessi $\mathbb{C}$
+- la perdita del determinismo
