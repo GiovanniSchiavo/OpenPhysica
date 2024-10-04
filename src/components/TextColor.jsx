@@ -1,43 +1,16 @@
 import React from 'react';
 
-const Blue = ({ children }) => {
-  return <span style={{ color: 'blue' }}>{children}</span>;
+const createColorComponent = (color) => ({ children }) => {
+  return <span style={{ color }}>{children}</span>;
 };
 
-const Red = ({ children }) => {
-  return <span style={{ color: 'red' }}>{children}</span>;
-};
+const colors = [
+  'AliceBlue', 'AntiqueWhite', 'Aqua', 'Aquamarine', 'Azure', 'Beige', 'Bisque', 'Black', 'BlanchedAlmond', 'Blue', 'BlueViolet', 'Brown', 'BurlyWood', 'CadetBlue', 'Chartreuse', 'Chocolate', 'Coral', 'CornflowerBlue', 'Cornsilk', 'Crimson', 'Cyan', 'DarkBlue', 'DarkCyan', 'DarkGoldenRod', 'DarkGray', 'DarkGreen', 'DarkKhaki', 'DarkMagenta', 'DarkOliveGreen', 'DarkOrange', 'DarkOrchid', 'DarkRed', 'DarkSalmon', 'DarkSeaGreen', 'DarkSlateBlue', 'DarkSlateGray', 'DarkTurquoise', 'DarkViolet', 'DeepPink', 'DeepSkyBlue', 'DimGray', 'DodgerBlue', 'FireBrick', 'FloralWhite', 'ForestGreen', 'Fuchsia', 'Gainsboro', 'GhostWhite', 'Gold', 'GoldenRod', 'Gray', 'Green', 'GreenYellow', 'HoneyDew', 'HotPink', 'IndianRed', 'Indigo', 'Ivory', 'Khaki', 'Lavender', 'LavenderBlush', 'LawnGreen', 'LemonChiffon', 'LightBlue', 'LightCoral', 'LightCyan', 'LightGoldenRodYellow', 'LightGray', 'LightGreen', 'LightPink', 'LightSalmon', 'LightSeaGreen', 'LightSkyBlue', 'LightSlateGray', 'LightSteelBlue', 'LightYellow', 'Lime', 'LimeGreen', 'Linen', 'Magenta', 'Maroon', 'MediumAquaMarine', 'MediumBlue', 'MediumOrchid', 'MediumPurple', 'MediumSeaGreen', 'MediumSlateBlue', 'MediumSpringGreen', 'MediumTurquoise', 'MediumVioletRed', 'MidnightBlue', 'MintCream', 'MistyRose', 'Moccasin', 'NavajoWhite', 'Navy', 'OldLace', 'Olive', 'OliveDrab', 'Orange', 'OrangeRed', 'Orchid', 'PaleGoldenRod', 'PaleGreen', 'PaleTurquoise', 'PaleVioletRed', 'PapayaWhip', 'PeachPuff', 'Peru', 'Pink', 'Plum', 'PowderBlue', 'Purple', 'RebeccaPurple', 'Red', 'RosyBrown', 'RoyalBlue', 'SaddleBrown', 'Salmon', 'SandyBrown', 'SeaGreen', 'SeaShell', 'Sienna', 'Silver', 'SkyBlue', 'SlateBlue', 'SlateGray', 'Snow', 'SpringGreen', 'SteelBlue', 'Tan', 'Teal', 'Thistle', 'Tomato', 'Turquoise', 'Violet', 'Wheat', 'White', 'WhiteSmoke', 'Yellow', 'YellowGreen'
+];
 
-const Green = ({ children }) => {
-  return <span style={{ color: 'green' }}>{children}</span>;
-};
+const colorComponents = colors.reduce((acc, color) => {
+  acc[color] = createColorComponent(color);
+  return acc;
+}, {});
 
-const Yellow = ({ children }) => {
-  return <span style={{ color: 'yellow' }}>{children}</span>;
-};
-
-const Black = ({ children }) => {
-  return <span style={{ color: 'black' }}>{children}</span>;
-};
-
-const White = ({ children }) => {
-  return <span style={{ color: 'white' }}>{children}</span>;
-};
-
-const Gray = ({ children }) => {
-  return <span style={{ color: 'gray' }}>{children}</span>;
-};
-
-const Orange = ({ children }) => {
-  return <span style={{ color: 'orange' }}>{children}</span>;
-};
-
-const Purple = ({ children }) => {
-  return <span style={{ color: 'purple' }}>{children}</span>;
-};
-
-const Pink = ({ children }) => {
-  return <span style={{ color: 'pink' }}>{children}</span>;
-};
-
-export { Blue, Red, Green, Yellow, Black, White, Gray, Orange, Purple, Pink };
+export default colorComponents;

@@ -32,9 +32,9 @@
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   }
   
-.katex {
+/* .katex {
     line-height: 2;
-}
+} */
 
 .geogebra-container {
     width: 90%;
@@ -42,3 +42,20 @@
     justify-content: center;
     margin: 5%;
 }
+
+p:has(img) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+/* src/css/custom.css */
+iframe[title="YouTube video player"] {
+    width: 70%;
+    box-sizing: border-box;
+    height: auto;
+    margin-right: 15%;
+    margin-left: 15%;
+    aspect-ratio: 16 / 9;    
+  }
+  

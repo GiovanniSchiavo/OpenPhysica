@@ -30,11 +30,9 @@ const config: Config = {
       'classic',
       {
         docs: {
-          remarkPlugins: [remarkMath],
+          remarkPlugins: [remarkMath],       
           rehypePlugins: [rehypeKatex],
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/GiovanniSchiavo/OpenPhysica',
         },
@@ -118,6 +116,23 @@ const config: Config = {
             sidebarId: 'Analisi3', // foldername
             label: 'Analisi 3',     // navbar title
           },
+          {
+            type: 'dropdown',
+            label: 'Corsi a scelta',
+            position: 'left',
+            items: [
+                {
+                    type: 'docSidebar',
+                    label: 'Storia della Fisica',
+                    sidebarId: 'StoriaFisica',
+                },
+                {
+                    type: 'docSidebar',
+                    label: 'Metodi Computazionali per la fisica',
+                    sidebarId: 'MetodiComputazionali',
+                },
+            ]
+          }
         ],
       },
     footer: {
