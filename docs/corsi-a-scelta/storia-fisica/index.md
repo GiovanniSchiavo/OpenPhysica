@@ -1,8 +1,3 @@
-
-import { Img25, Img33, Img50, Img75, Img100 } from '@site/src/components/Image';
-import chimica1 from "./img/introduzione/chimica1.png";
-
-
 # Introduzione
 
 ## Obbiettivi formativi
@@ -123,7 +118,7 @@ dalle scienze empiriche alla matematica
 
 - Ai primordi della chimica moderna (1858-1861) C2H5OH (alcol etilico)
 
-<Img25 src={chimica1} />;
+<img class="medium" src={require("./img/introduzione/chimica1.png").default} />
 
 
 - Crum Brown (1864) e gli “isomeri”:
@@ -132,7 +127,13 @@ chimica ma proprietà fisiche diverse
 (in figura alcol di Friedel, o isopropilico,
 e alcol propilico, C3H7OH).
 
+<img class="medium" src={require("./img/introduzione/chimica2.png").default} />
+
+
 - Sviluppi algebrici: Cayley, Clifford,
 Sylvester, Pólya. “_Problemi combinatori generali sui gruppi di permutazione per il calcolo del numero di
 isomeri_”.
+
+<img class="medium" src={require("./img/introduzione/chimica3.png").default} />
+
 

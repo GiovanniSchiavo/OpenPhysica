@@ -3,10 +3,6 @@ sidebar-position: 1
 sidebar-label: Leggi di Kirchhoff
 ---
 
-import { Img25, Img33, Img50, Img75, Img100 } from '@site/src/components/Image';
-import Kirchhoff1 from '@site/static/img/lab3/reti-resistive/kirchhoff/kirchhoff-1.png';
-
-
 # Leggi di Kirchhoff
 
 Un circuito elettrico viene spesso definito col termine **rete elettrica**.
@@ -26,7 +22,7 @@ $$
 \sum_k i_k = 0
 $$
 
-<Img25 src={Kirchhoff1} />;
+<img class="small" src={require('./kirchhoff-1.png').default} />
 
 Formulazione alternativa: la somma delle correnti che entrano in un nodo è uguale alla somma delle correnti che escono dal nodo.
 $$

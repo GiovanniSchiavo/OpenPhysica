@@ -44,6 +44,5 @@ modo è molto facile riconoscere le sorgenti positive e sorgenti negative.
 Esiste una procedura operativa molto semplice che consente di capire se
 è presente in un punto una sorgente positiva.
 
----
 [^1]: Ricordiamo che se cambiamo il verso da cui si osservano le lancette dell'orologio, ci
 sembrerà che queste si muovano in senso antiorario anzichè orario.
