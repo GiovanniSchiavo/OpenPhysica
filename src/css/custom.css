@@ -31,10 +31,18 @@
     --ifm-color-primary-lightest: #D8BFD8; /* Thistle */
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   }
-  
-/* .katex {
-    line-height: 2;
-} */
+
+p:has(> span.katex:only-child) {
+    line-height: 2.4;
+}
+
+div>span.katex-display>span.katex {
+    line-height: 3.2;
+}
+
+.katex-display>.katex {
+    white-space: wrap;
+} 
 
 .geogebra-container {
     width: 90%;
@@ -43,19 +51,36 @@
     margin: 5%;
 }
 
-p:has(img) {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+img {
+    min-width: 150px;
+    max-width: 750px; 
+}
+
+img.small {
+    width: 25%;
+    margin: auto 37.5%;
+}
+
+img.medium {
+    width: 50%;
+    margin: auto 25%;
+}
+
+img.large {
+    width: 75%;
+    margin: auto 12.5%;
+}
 
 /* src/css/custom.css */
 iframe[title="YouTube video player"] {
-    width: 70%;
+    width: 75%;
     box-sizing: border-box;
     height: auto;
-    margin-right: 15%;
-    margin-left: 15%;
+    padding-right: 12.5%;
+    padding-left: 12.5%;
     aspect-ratio: 16 / 9;    
-  }
-  
+}
+
+#footnote-label {
+    border-bottom: 1.4px solid var(--ifm-hr-background-color);
+}

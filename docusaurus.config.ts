@@ -16,22 +16,27 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
+    i18n: {
     defaultLocale: 'it',
     locales: ['it'],
   },
-
+markdown: {
+    remarkRehypeOptions: { 
+        footnoteLabel: ' ', 
+    }, 
+  },
   presets: [
     [
       'classic',
       {
         docs: {
           remarkPlugins: [remarkMath],       
-          rehypePlugins: [rehypeKatex],
+          rehypePlugins: [
+            [rehypeKatex, { strict: false }]
+          ],
           sidebarPath: './sidebars.ts',
           editUrl:
             'https://github.com/GiovanniSchiavo/OpenPhysica',
@@ -62,59 +67,67 @@ const config: Config = {
     navbar: {
         title: 'OpenPhysica',
         items: [
-          // {
-          //   type: 'doc',
-          //   docId: 'intro',
-          //   position: 'left',
-          //   label: 'Tutorials',
-          // },
           {
-            type: 'docSidebar',  // docSidebar
-            position: 'left',
-            sidebarId: 'Analisi1', // foldername
-            label: 'Analisi 1',     // navbar title
+              type: 'dropdown',
+              label: 'Primo anno',
+              position: 'left',
+              items: [
+                  {
+                      type: 'docSidebar',  // docSidebar
+
+                      sidebarId: 'Analisi1', // foldername
+                      label: 'Analisi 1',     // navbar title
+                    },
+                    {
+                        type: 'docSidebar',  // docSidebar
+                        sidebarId: 'Analisi2', // foldername
+                        label: 'Analisi 2',     // navbar title
+                    },
+                    {
+                    type: 'docSidebar',  // docSidebar
+                    sidebarId: 'Fisica1', // foldername
+                    label: 'Fisica 1',     // navbar title
+                  },
+                ]
+            },
+            {
+                type: 'dropdown',
+                label: 'Secondo anno',
+                position: 'left',
+                items: [
+                    {
+                      type: 'docSidebar',  // docSidebar
+                      sidebarId: 'Analisi3', // foldername
+                      label: 'Analisi 3',     // navbar title
+                    },
+                    {
+                        type: 'docSidebar',  // docSidebar
+                        sidebarId: 'Fisica2', // foldername
+                        label: 'Fisica 2',     // navbar title
+                    },
+                    {
+                        type: 'docSidebar',  // docSidebar
+                        sidebarId: 'Fismat', // foldername
+                        label: 'Fisica Matematica',     // navbar title
+                    },
+            ]
           },
           {
-            type: 'docSidebar',  // docSidebar
+            type: 'dropdown',
+            label: 'Terzo anno',
             position: 'left',
-            sidebarId: 'Analisi2', // foldername
-            label: 'Analisi 2',     // navbar title
-          },
-          {
-            type: 'docSidebar',  // docSidebar
-            position: 'left',
-            sidebarId: 'Fisica1', // foldername
-            label: 'Fisica 1',     // navbar title
-          },
-          {
-            type: 'docSidebar',  // docSidebar
-            position: 'left',
-            sidebarId: 'Fisica2', // foldername
-            label: 'Fisica 2',     // navbar title
-          },
-          {
-            type: 'docSidebar',  // docSidebar
-            position: 'left',
-            sidebarId: 'Fismat', // foldername
-            label: 'Fisica Matematica',     // navbar title
-          },
-          {
-            type: 'docSidebar',  // docSidebar
-            position: 'left',
-            sidebarId: 'FisicaTeorica', // foldername
-            label: 'Fisica Teorica',     // navbar title
-          },
-          {
-            type: 'docSidebar',  // docSidebar
-            position: 'left',
-            sidebarId: 'Lab3', // foldername
-            label: 'Laboratorio di Fisica',     // navbar title
-          },
-          {
-            type: 'docSidebar',  // docSidebar
-            position: 'left',
-            sidebarId: 'Analisi3', // foldername
-            label: 'Analisi 3',     // navbar title
+            items: [
+                {
+                    type: 'docSidebar',  // docSidebar
+                    sidebarId: 'FisicaTeorica', // foldername
+                    label: 'Fisica Teorica',     // navbar title
+                  },
+                  {
+                    type: 'docSidebar',  // docSidebar
+                    sidebarId: 'Lab3', // foldername
+                    label: 'Laboratorio di Fisica',     // navbar title
+                  },
+            ]
           },
           {
             type: 'dropdown',
