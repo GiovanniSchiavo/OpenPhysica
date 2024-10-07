@@ -41,7 +41,7 @@ $$
 \Phi_{S_c}(\vec{v})=\int_{S_c}\vec{v}\cdot\hat{n}ds=\int_{V_c}\vec{\nabla}\cdot\vec{v}dV
 $$
 
-<iframe src="https://www.youtube.com/embed/rB83DpBJQsE?si=7V0eqnd6qFGpWsGr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/rB83DpBJQsE?si=PXIxa1DJo8ykiYxs&amp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe>
 
 [^1]: La dimostrazione del teorema è molto semplice, consiste nell'impiegare sapientemente
 il teorema di Gauss-Green.

@@ -73,12 +73,21 @@ img.large {
 
 /* src/css/custom.css */
 iframe[title="YouTube video player"] {
-    width: 75%;
-    box-sizing: border-box;
+    width: 70%;
     height: auto;
-    padding-right: 12.5%;
-    padding-left: 12.5%;
-    aspect-ratio: 16 / 9;    
+    margin: 20px 15%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;    
+}
+
+@media screen and (max-width: 768px) {
+    iframe[title="YouTube video player"] {
+        width: 90%;
+        margin: 15px 5%;
+        border-radius: 5px;    
+
+    }
+    
 }
 
 #footnote-label {

@@ -14,8 +14,8 @@ Alcune caratteristiche di Python:
 
 Per il resto, è tutto in questo video:
 
-<iframe src="https://www.youtube.com/embed/kqtD5dpn9C8?si=TvucHOZZ25buL2YG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
----
+<iframe src="https://www.youtube-nocookie.com/embed/kqtD5dpn9C8?si=XgJvIGkZb3YI0ryv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe>
+
 [^1]: Un linguaggio interpretato è un linguaggio di programmazione per il quale il codice sorgente viene eseguito direttamente da un interprete, 
 senza passare per una fase di compilazione.
 In realtà, comunque, anche Python viene compilato, ma il codice sorgente viene compilato in bytecode,
